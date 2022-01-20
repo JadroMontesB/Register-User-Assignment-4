@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <header class="nav-header">
+        <img class="logo" src="img/Register.png"  width="90" height="100" alt="logo">
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home Page</a></li>                
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+
+        <h2>Please enter the correct information for registration</h2>
+        
+        <div class="control">
+            <label>Email:</label>
+            <input type="text" class="form-control" id="txtEmail" placeholder="user@email.com"/>
+        </div>
+        <div class="control">
+            <label>Password:</label>
+            <input type="password" class="form-control" id="txtPassword" placeholder="********"/>
+        </div>
+        <div class="control">
+            <label>First Name:</label>
+            <input class="form-control" id="txtFirst" type="text" placeholder="Insert Your First Name...">
+        </div>
+        <div class="control">
+            <label>Last Name:</label>
+            <input class="form-control" id="txtLast" type="text" placeholder="Insert Your Last Name...">
+        </div>
+        <div class="control">
+            <label>Age:</label>
+            <input class="form-control" id="txtAge" type="number" placeholder="1-100">
+        </div>
+    
+        <div class="control">
+            <label>Address:</label>
+            <input class="form-control" id="txtAddress" type="text" placeholder="Address City CP 31451">
+        </div>
+    
+        <div class="control">
+            <label>Phone Number:</label>
+            <input class="form-control" id="txtPhone" type="tel" placeholder="01+ 555-555-5555">
+        </div>
+   
+        <div class="control">
+            <label>Payment:</label>
+            <select class="form-control" id="selPayment">
+                <option>PayPal</option>
+                <option>Check</option>
+                <option>Credit Card</option>
+            </select>
+        </div>
+
+        <br>
+        <div class="control">
+            <button class="btn btn-primary" onclick="registerUser();"  id="btnSave" >Register User</button>   
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/register.js"></script>
+    <script src="script/storemanager.js" ></script>
+</body>
+</html>
